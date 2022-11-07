@@ -512,7 +512,7 @@
         <form name="request_form" class="request-form">
           <p class="request-title">Залиште свої дані, ми вам передзвонимо</p>
 
-          <ul class="request-fieldset list">
+          <ul class="list">
             <li class="request-field-wrap">
               <label for="request-name" class="request-field-title">Ім'я</label>
               <div class="input-svg-wrap">
@@ -575,14 +575,16 @@
 
           <div class="request-checkbox-wrap">
             <input
-              class="request-checkbox"
+              class="request-checkbox-field visually-hidden"
               type="checkbox"
               name="checkbox"
               id="request-checkbox"
-            /><span request-checkbox-icon></span
-            ><label for="request-checkbox" class="request-checkbox-title"
-              >Погоджуюся з розсилкою та приймаю
-              <span><a href="">Умови договору</a></span></label
+              required
+            /><label for="request-checkbox" class="request-checkbox-title"
+              ><span
+                ><svg class="checkbox-icon" width="16" height="15">
+                  <use href="./images/icons.svg#check_icon"></use></svg></span
+              >Погоджуюся з розсилкою та приймаю <a class="privacy" href="">Умови договору</a></label
             >
           </div>
 
