@@ -476,27 +476,26 @@
           </ul>
         </div>
 
-        <form name="subscription_form" class="form-subscribe">
-          <label for="email" class="form-title" name="email"
+        <form name="subscription_form" class="subscribe-form">
+          <label for="subscribe-email" class="subscribe-title"
             >Підпишіться на розсилку</label
           >
           <div class="input-button-wrap">
             <input
-              class="form-field"
+              class="subscribe-field"
               type="email"
               name="email"
-              id="email"
+              id="subscribe-email"
               placeholder="E-mail"
             />
-            <button class="form-button" type="submit">
-              <span class="button-title">Підписатися</span>
+            <button class="subscribe-button" type="submit">
+              <span class="subscribe-button-title">Підписатися</span>
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe_icon"></use>
               </svg>
             </button>
           </div>
         </form>
-      
       </div>
     </footer>
 
@@ -508,6 +507,89 @@
             <use href="./images/icons.svg#close_icon"></use>
           </svg>
         </button>
+
+        <!-- Request Form -->
+        <form name="request_form" class="request-form">
+          <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <ul class="request-fieldset list">
+            <li class="request-field-wrap">
+              <label for="request-name" class="request-field-title">Ім'я</label>
+              <div class="input-svg-wrap">
+                <input
+                  class="request-field"
+                  type="text"
+                  name="name"
+                  id="request-name"
+                />
+                <svg class="request-icon" width="18" height="18">
+                  <use href="./images/icons.svg#person_icon"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="request-field-wrap">
+              <label for="request-phone" class="request-field-title"
+                >Телефон</label
+              >
+              <div class="input-svg-wrap">
+                <input
+                  class="request-field"
+                  type="text"
+                  name="phone"
+                  id="request-phone"
+                />
+                <svg class="request-icon" width="18" height="18">
+                  <use href="./images/icons.svg#phone_icon"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="request-field-wrap">
+              <label
+                for="request-email"
+                class="request-field-title"
+                >Пошта</label
+              >
+              <div class="input-svg-wrap">
+                <input
+                  class="request-field"
+                  type="email"
+                  name="email"
+                  id="request-email"
+                />
+                <svg class="request-icon" width="18" height="18">
+                  <use href="./images/icons.svg#email_icon"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+
+          <div class="request-comment-wrap">
+            <label for="request-comment" class="request-comment-title"
+              >Коментар<textarea
+                id="request-comment"
+                rows="10"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="request-checkbox-wrap">
+            <input
+              class="request-checkbox"
+              type="checkbox"
+              name="checkbox"
+              id="request-checkbox"
+            /><label
+              for="request-checkbox"
+              class="request-checkbox-title"
+              >Погоджуюся з розсилкою та приймаю
+              <span><a href="">Умови договору</a></span></label
+            >
+          </div>
+
+          <button class="request-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 

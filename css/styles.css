@@ -684,13 +684,13 @@ img {
 }
 
 /* -----Subscription Form----- */
-.form-subscribe {
+.subscribe-form {
   display: flex;
   align-items: baseline;
   flex-direction: column;
 }
 
-.form-title {
+.subscribe-title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -706,7 +706,7 @@ img {
   align-items: center;
 }
 
-.form-field {
+.subscribe-field {
   margin-right: 12px;
   padding: 15px 16px;
   min-width: 358px;
@@ -716,14 +716,14 @@ img {
   background-color: transparent;
 }
 
-.form-field[placeholder] {
+.subscribe-field[placeholder] {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-button {
+.subscribe-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -739,7 +739,7 @@ img {
   cursor: pointer;
 }
 
-.button-title {
+.subscribe-button-title {
   margin-right: 10px;
 
   font-weight: 700;
@@ -821,4 +821,69 @@ img {
 .modal-button:hover,
 .modal-button:focus {
   color: var(--accent-color);
+}
+
+/* -----Request Form----- */
+.request-form {
+  padding: 40px;
+}
+
+.request-title {
+  margin-bottom: 12px;
+}
+
+.request-fieldset {
+}
+
+.request-field-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-field-wrap {
+  margin-bottom: 10px;
+}
+
+.request-field-title {
+  margin-bottom: 4px;
+  }
+
+.input-svg-wrap {
+  position:relative;
+ }
+
+.request-field {
+  height: 40px;
+  padding: 11px; 12px;
+  width: 100%;
+  }
+
+.request-icon {
+  position: absolute;
+  bottom: 50%;
+  left: 12px;
+  transform: translateY(50%);
+  }
+
+.request-comment-wrap {
+  margin-bottom: 20px;
+}
+
+.request-comment-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-checkbox-wrap {
+  margin-bottom: 30px;
+}
+
+.request-checkbox {
+  margin-right: 7px;
+}
+
+.request-checkbox-title {
+}
+
+.request-button {
 }
