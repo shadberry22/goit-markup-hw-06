@@ -510,7 +510,7 @@
 
         <!-- Request Form -->
         <form name="request_form" class="request-form">
-          <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="request-title">Залиште свої дані, ми вам передзвонимо</p>
 
           <ul class="request-fieldset list">
             <li class="request-field-wrap">
@@ -546,9 +546,7 @@
             </li>
 
             <li class="request-field-wrap">
-              <label
-                for="request-email"
-                class="request-field-title"
+              <label for="request-email" class="request-field-title"
                 >Пошта</label
               >
               <div class="input-svg-wrap">
@@ -568,8 +566,9 @@
           <div class="request-comment-wrap">
             <label for="request-comment" class="request-comment-title"
               >Коментар<textarea
+                class="request-comment-area"
                 id="request-comment"
-                rows="10"
+                placeholder="Введіть текст"
               ></textarea>
             </label>
           </div>
@@ -580,15 +579,16 @@
               type="checkbox"
               name="checkbox"
               id="request-checkbox"
-            /><label
-              for="request-checkbox"
-              class="request-checkbox-title"
+            /><span request-checkbox-icon></span
+            ><label for="request-checkbox" class="request-checkbox-title"
               >Погоджуюся з розсилкою та приймаю
               <span><a href="">Умови договору</a></span></label
             >
           </div>
 
-          <button class="request-button" type="submit">Відправити</button>
+          <div class="request-button-wrap">
+            <button class="request-button" type="submit">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
